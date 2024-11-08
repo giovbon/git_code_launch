@@ -50,7 +50,7 @@ class KeywordQueryEventListener(EventListener):
                     icon='images/icon.png',
                     name=project,
                     description=f'Project: {project}',
-                    on_enter=RunScriptAction(f"{root_folder}/{project} {code_command}")
+                    on_enter=RunScriptAction(f"{code_command} {root_folder}/{project}")
                 ))
                 
         if not projects:
